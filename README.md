@@ -28,6 +28,7 @@ The heatmap revealed a moderate correlation between age, BMI, and annual costs. 
 - Cost binning: Created cost bins for stratified train-test splitting, ensuring balanced representation of high and low-cost patients.
  ---
  🤖**Modeling**
+ 
  1️⃣ **Linear Regression**
 As a baseline model:
 - MAE: 1,702
@@ -35,6 +36,7 @@ As a baseline model:
 - RMSE: 2,096
 - R²: -0.03
 The negative R² indicated the model was underfitting — unable to capture nonlinear interactions.
+
  2️⃣**Random Forest Regressor (Default)**
 Switched to a nonlinear ensemble model:
 - MAE: 1,572
@@ -42,6 +44,7 @@ Switched to a nonlinear ensemble model:
 - RMSE: 1,975
 - R²: 0.09
 Slight improvement, but still room for tuning.
+
   3️⃣ **Random Forest (Tuned with Grid Search)**
 Performed hyperparameter tuning using GridSearchCV:
 - Best parameters:

@@ -40,6 +40,7 @@ As a baseline model:
 - MSE:4394722    
 - RMSE: 2,096
 - R²: -0.03
+  
 The negative R² indicated the model was underfitting — unable to capture nonlinear interactions.
 
  2️⃣**Random Forest Regressor (Default)**
@@ -48,6 +49,7 @@ Switched to a nonlinear ensemble model:
 - MSE: 3903817 
 - RMSE: 1,975
 - R²: 0.09
+  
 Slight improvement, but still room for tuning.
 
   3️⃣ **Random Forest (Tuned with Grid Search)**
@@ -78,7 +80,7 @@ The tuned random forest performed best, reducing errors and improving explained 
 
 - **Age** and **BMI** were the most important features contributing to cost predictions.
 - **Smoking** and **chronic conditions** had significant effects on higher healthcare expenses, consistent with known medical trends.
-- Ensemble methods like Random Forest performed significantly better than linear models, indicating complex nonlinear relationships in the data.---
+- Ensemble methods like Random Forest performed significantly better than linear models, indicating complex nonlinear relationships in the data.
 
 ---
 
